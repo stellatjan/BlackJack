@@ -1,11 +1,27 @@
 import javax.smartcardio.Card;
 
 public class PlayBlackJack {
-    public static void main(String[] args) {
-        System.out.println("Let's play Blackjack!");
-        Player player = new Player();
-        Dealer dealer = new Dealer();
-        Cards cardDeck = new Cards();
+    public Player player;
+    public Dealer dealer;
+    public Cards[] cardDeck;
 
+    public static void main(String[] args) {
+        PlayBlackJack play = new PlayBlackJack();
     }
+
+
+    public PlayBlackJack(){
+        System.out.println("Let's play Blackjack!");
+        cardDeck = new Cards[52];
+
+
+        for(int x=0; x< 13;x++) {
+            Cards firstCard = new Cards(x+1, "diamonds", false, x+1);
+            firstCard.print();
+            cardDeck[x] = firstCard;
+        }
+    }
+
+
+
 }

@@ -3,4 +3,6 @@ public class Player {
     public boolean isHit;
     public boolean isStand;
     public boolean isSplit;
+    public Cards[]cards;
+
 }
