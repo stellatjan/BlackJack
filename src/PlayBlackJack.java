@@ -8,4 +8,6 @@ public class PlayBlackJack {
     }
 
     public PlayBlackJack() {
-        System.out.println("Let's play Blackjack!"
+        System.out.println("Let's play Blackjack!");
+    }
+    }

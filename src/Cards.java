@@ -5,7 +5,7 @@ public class Cards {
    public int value;
    public String name;
 
-   // constructor
+   // constructor:
    public Cards(int pValue, String pSuit, boolean pisEleven, int pNumber, String pName) {
       value = pValue;
       isEleven = pisEleven;
