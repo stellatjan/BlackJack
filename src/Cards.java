@@ -1,27 +1,20 @@
 public class Cards {
    public int number;
    public String suit;
-   public boolean isEleven; //i.e for ace is it 11 or 1
+   public boolean isEleven;
    public int value;
+   public String name;
 
-   //constructor
-   public Cards(int pValue, String pSuit, boolean pisEleven, int pNumber) {
+   // constructor
+   public Cards(int pValue, String pSuit, boolean pisEleven, int pNumber, String pName) {
       value = pValue;
       isEleven = pisEleven;
-      suit=pSuit;
+      suit = pSuit;
       number = pNumber;
-
-      if(pValue==13){
-         value=10;
-         suit= "diamonds";
-         isEleven=false;
-         number=10;
-
-
-      }
+      name = pName;
    }
 
-   public void print(){
-      System.out.println("your card is an " + number + " of " + suit + " your total value is " + value);
+   public void print() {
+      System.out.println("Your card is the " + name + " of " + suit + ". Its value is " + value + ".");
    }
 }
